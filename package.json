@@ -1,0 +1,23 @@
+{
+  "name": "usb-accessory-gadget",
+  "author": {
+    "email": "diff@protonmail.com",
+    "name": "Tim Strazzere"
+  },
+  "version": "1.0.0",
+  "description": "Simple frida gadget for hooking usb accessories and dumping traffic between app and the device.",
+  "main": "agent/index.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "frida-compile agent/index.ts -o _agent.js -c",
+    "watch": "frida-compile agent/index.ts -o _agent.js -w",
+    "lint": "npx eslint agent/**/*.ts"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^17.1.0",
+    "@types/node": "^16.4.8",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "eslint": "^8.19.0",
+    "frida-compile": "^10.0.0"
+  }
+}
