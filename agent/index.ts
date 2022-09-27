@@ -1,4 +1,4 @@
-import { log } from "./logger"
+import { log } from "./logger.js"
 
 const debug = false
 // eslint-disable-next-line @typescript-eslint/ban-types

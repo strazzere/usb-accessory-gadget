@@ -14,10 +14,10 @@
     "lint": "npx eslint agent/**/*.ts"
   },
   "devDependencies": {
-    "@types/frida-gum": "^17.1.0",
-    "@types/node": "^16.4.8",
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "eslint": "^8.19.0",
-    "frida-compile": "^10.0.0"
+    "@types/frida-gum": "^18.2.0",
+    "@types/node": "^18.7.23",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "eslint": "^8.24.0",
+    "frida-compile": "^16.1.0"
   }
 }
