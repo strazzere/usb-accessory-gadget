@@ -11,13 +11,13 @@
     "prepare": "npm run build",
     "build": "frida-compile agent/index.ts -o _agent.js -c",
     "watch": "frida-compile agent/index.ts -o _agent.js -w",
-    "lint": "npx eslint agent/**/*.ts"
+    "lint": "biome check agent/"
   },
   "devDependencies": {
-    "@types/frida-gum": "^18.2.0",
-    "@types/node": "^18.7.23",
-    "@typescript-eslint/eslint-plugin": "^5.38.1",
-    "eslint": "^8.24.0",
-    "frida-compile": "^16.1.0"
+    "@biomejs/biome": "^2.4.3",
+    "@types/frida-gum": "^19.0.1",
+    "@types/node": "^20.19.33",
+    "frida-compile": "^19.0.4",
+    "frida-java-bridge": "^7.0.12"
   }
 }
